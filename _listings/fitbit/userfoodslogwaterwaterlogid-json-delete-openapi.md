@@ -1,0 +1,230 @@
+---
+swagger: "2.0"
+x-collection-name: Fitbit
+x-complete: 0
+info:
+  title: Fitbit Delete User Foods Log Water Water Log .json
+  description: Delete user's water log entry with the given id.
+  version: 1.0.0
+host: api.fitbit.com
+basePath: /1
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /user/-{collection-path}apiSubscriptions.json:
+    get:
+      summary: Get User Collection Path Apisubscriptions.json
+      description: Get a list of user's subscriptions for your application in the
+        format requested.
+      operationId: getUserCollectionPathApisubscriptions.json
+      x-api-path-slug: usercollectionpathapisubscriptions-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - -collection-pathapiSubscriptions.json
+  /user/-{collection-path}apiSubscriptions/{subscription-id}.json:
+    delete:
+      summary: Delete User Collection Path Apisubscriptions Subscription .json
+      description: Delete a subscription for the user and get a response in the format
+        requested.
+      operationId: deleteUserCollectionPathApisubscriptionsSubscription.json
+      x-api-path-slug: usercollectionpathapisubscriptionssubscriptionid-json-delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - -collection-pathapiSubscriptions
+      - Subscription-id.json
+    post:
+      summary: Post User Collection Path Apisubscriptions Subscription .json
+      description: Add a subscription for the user to get notifications and get a
+        response in the format requested.
+      operationId: postUserCollectionPathApisubscriptionsSubscription.json
+      x-api-path-slug: usercollectionpathapisubscriptionssubscriptionid-json-post
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - -collection-pathapiSubscriptions
+      - Subscription-id.json
+  /user/-/friends/invitations.json:
+    get:
+      summary: Get User Friends Invitations.json
+      description: Retrieve the list of invites to become freinds for a user in the
+        format requested.
+      operationId: getUserFriendsInvitations.json
+      x-api-path-slug: userfriendsinvitations-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Friends
+      - Invitations.json
+  /foods/units.json:
+    get:
+      summary: Get Foods Units.json
+      description: Get list of all valid Fitbit food units in the format requested.
+      operationId: getFoodsUnits.json
+      x-api-path-slug: foodsunits-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Foods
+      - Units.json
+  /foods/{food-id}.json:
+    get:
+      summary: Get Foods Food .json
+      description: Get the details of a specific food in Fitbit Food database (or
+        private food for the user) in the format requested. Note, that nutritional
+        values currently included in response only for the private foods.
+      operationId: getFoodsFood.json
+      x-api-path-slug: foodsfoodid-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Foods
+      - Food-id.json
+  /activities/{id}.json:
+    get:
+      summary: Get Activities .json
+      description: Get the details of a specific activity in Fitbit activities database
+        in the format requested. If activity has levels, also get list of activity
+        level details.
+      operationId: getActivities.json
+      x-api-path-slug: activitiesid-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Activities
+      - Id.json
+  /activities.json:
+    get:
+      summary: Get Activities.json
+      description: Get a tree of all valid Fitbit public activities from the activities
+        catalog as well as private custom activities the user created in the format
+        requested. If activity has levels, also get a list of activity level details.
+      operationId: getActivities.json
+      x-api-path-slug: activities-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Activities.json
+  /user/-/devices.json:
+    get:
+      summary: Get User Devices.json
+      description: Retrieve the list of Fitbit devices for a user in the format requested.
+      operationId: getUserDevices.json
+      x-api-path-slug: userdevices-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Devices.json
+  /user/-/foods/log/goal.json:
+    post:
+      summary: Post User Foods Log Goal.json
+      description: Update (create) a user's daily calorie consumption goal or Food
+        Plan and get a response in the format requested. Food Plan could not be created
+        unless user already has active goal (Update-Weight-Goal). Depending on the
+        weight goal setup only either MAINTENANCE (in case start weight is close to
+        target weight or smaller) or one of the four other "lose" food plans could
+        be created via intensity POST parameter.
+      operationId: postUserFoodsLogGoal.json
+      x-api-path-slug: userfoodsloggoal-json-post
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Foods
+      - Log
+      - Goal.json
+    get:
+      summary: Get User Foods Log Goal.json
+      description: Get a user's current daily calorie consumption goal and/or Food
+        Plan in the format requested.
+      operationId: getUserFoodsLogGoal.json
+      x-api-path-slug: userfoodsloggoal-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Foods
+      - Log
+      - Goal.json
+  /user/-/meals.json:
+    get:
+      summary: Get User Meals.json
+      description: Get a list of meals user created in his food log in the format
+        requested.
+      operationId: getUserMeals.json
+      x-api-path-slug: usermeals-json-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Meals.json
+  /foods.json:
+    post:
+      summary: Post Foods.json
+      description: Create new private food for a user and get a response in a format
+        requested. Created private food could be found in results of Search Foods
+        call.
+      operationId: postFoods.json
+      x-api-path-slug: foods-json-post
+      responses:
+        200:
+          description: OK
+      tags:
+      - Foods.json
+  /user/-/foods/log/water/{water-log-id}.json:
+    delete:
+      summary: Delete User Foods Log Water Water Log .json
+      description: Delete user's water log entry with the given id.
+      operationId: deleteUserFoodsLogWaterWaterLog.json
+      x-api-path-slug: userfoodslogwaterwaterlogid-json-delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - '-'
+      - Foods
+      - Log
+      - Water
+      - Water-log-id.json
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
