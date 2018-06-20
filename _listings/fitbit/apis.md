@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit
 x-kinRank: "9"
 x-alexaRank: "2266"
 tags: Fitbit
-created: "2018-06-19"
-modified: "2018-06-19"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/fitbit/master/_listings/fitbit/apis.md
 specificationVersion: "0.14"
 apis:
