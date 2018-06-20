@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit
 x-kinRank: "9"
 x-alexaRank: "2266"
 tags: Fitbit
-created: "2018-05-25"
-modified: "2018-05-25"
+created: "2018-06-19"
+modified: "2018-06-19"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/fitbit/master/_listings/fitbit/apis.md
 specificationVersion: "0.14"
 apis:
@@ -18,7 +18,7 @@ apis:
   description: Get a list of user's subscriptions for your application in the format
     requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-{collection-path}apiSubscriptions.json
   tags: User,-collection-pathapiSubscriptions.json
   properties:
@@ -31,7 +31,7 @@ apis:
   description: Delete a subscription for the user and get a response in the format
     requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-{collection-path}apiSubscriptions/{subscription-id}.json
   tags: User,-collection-pathapiSubscriptions,Subscription-id.json
   properties:
@@ -44,7 +44,7 @@ apis:
   description: Add a subscription for the user to get notifications and get a response
     in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-{collection-path}apiSubscriptions/{subscription-id}.json
   tags: User,-collection-pathapiSubscriptions,Subscription-id.json
   properties:
@@ -57,7 +57,7 @@ apis:
   description: Retrieve the list of invites to become freinds for a user in the format
     requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/friends/invitations.json
   tags: User,-,Friends,Invitations.json
   properties:
@@ -69,7 +69,7 @@ apis:
   x-api-slug: fitbit
   description: Get list of all valid Fitbit food units in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//foods/units.json
   tags: Foods,Units.json
   properties:
@@ -83,7 +83,7 @@ apis:
     food for the user) in the format requested. Note, that nutritional values currently
     included in response only for the private foods.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//foods/{food-id}.json
   tags: Foods,Food-id.json
   properties:
@@ -97,7 +97,7 @@ apis:
     in the format requested. If activity has levels, also get list of activity level
     details.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//activities/{id}.json
   tags: Activities,Id.json
   properties:
@@ -111,7 +111,7 @@ apis:
     catalog as well as private custom activities the user created in the format requested.
     If activity has levels, also get a list of activity level details.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//activities.json
   tags: Activities.json
   properties:
@@ -123,7 +123,7 @@ apis:
   x-api-slug: fitbit
   description: Retrieve the list of Fitbit devices for a user in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/devices.json
   tags: User,-,Devices.json
   properties:
@@ -140,7 +140,7 @@ apis:
     or smaller) or one of the four other "lose" food plans could be created via intensity
     POST parameter.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/goal.json
   tags: User,-,Foods,Log,Goal.json
   properties:
@@ -153,7 +153,7 @@ apis:
   description: Get a user's current daily calorie consumption goal and/or Food Plan
     in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/goal.json
   tags: User,-,Foods,Log,Goal.json
   properties:
@@ -165,7 +165,7 @@ apis:
   x-api-slug: fitbit
   description: Get a list of meals user created in his food log in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/meals.json
   tags: User,-,Meals.json
   properties:
@@ -178,7 +178,7 @@ apis:
   description: Create new private food for a user and get a response in a format requested.
     Created private food could be found in results of Search Foods call.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//foods.json
   tags: Foods.json
   properties:
@@ -190,7 +190,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's water log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/water/{water-log-id}.json
   tags: User,-,Foods,Log,Water,Water-log-id.json
   properties:
@@ -204,7 +204,7 @@ apis:
     to the Accept-Language header provided (or waterUnit) and get a response in the
     format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/water.json
   tags: User,-,Foods,Log,Water.json
   properties:
@@ -218,7 +218,7 @@ apis:
     in the format requested using units in the unit system which corresponds to the
     Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/water/date/{date}.json
   tags: User,-,Foods,Log,Water,Date,Date.json
   properties:
@@ -230,7 +230,7 @@ apis:
   x-api-slug: fitbit
   description: Delete the food with the given id from user's list of favorite foods.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/favorite/{id}.json
   tags: User,-,Foods,Log,Favorite,Id.json
   properties:
@@ -242,7 +242,7 @@ apis:
   x-api-slug: fitbit
   description: Add the food with the given id to user's list of favorite foods.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/favorite/{id}.json
   tags: User,-,Foods,Log,Favorite,Id.json
   properties:
@@ -256,7 +256,7 @@ apis:
     using units in the unit system which corresponds to the Accept-Language header
     provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/goals/weekly.json
   tags: User,-,Activities,Goals,Weekly.json
   properties:
@@ -269,7 +269,7 @@ apis:
   description: Get a user's current daily activity goals in the format requested using
     units in the unit system which corresponds to the Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/goals/daily.json
   tags: User,-,Activities,Goals,Daily.json
   properties:
@@ -282,7 +282,7 @@ apis:
   description: Delete the activity with the given id from user's list of favorite
     activities.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/log/favorite/{id}.json
   tags: User,-,Activities,Log,Favorite,Id.json
   properties:
@@ -294,7 +294,7 @@ apis:
   x-api-slug: fitbit
   description: Adds the activity with the given id to user's list of favorite activities.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/log/favorite/{id}.json
   tags: User,-,Activities,Log,Favorite,Id.json
   properties:
@@ -308,7 +308,7 @@ apis:
     marks a food as favorite on the user's Food Tab tab. A favorite food in the list
     provides a quick way to log the food via the Log Food endpoint.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/favorite.json
   tags: User,-,Foods,Log,Favorite.json
   properties:
@@ -321,7 +321,7 @@ apis:
   description: Get a list of a user's frequent foods in the format requested. A frequent
     food in the list provides a quick way to log the food via the Log Food endpoint.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/frequent.json
   tags: User,-,Foods,Log,Frequent.json
   properties:
@@ -334,7 +334,7 @@ apis:
   description: Get a list of a user's recent foods in the format requested. A recent
     food provides a quick way to log the food via the Log Food endpoint.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/recent.json
   tags: User,-,Foods,Log,Recent.json
   properties:
@@ -348,7 +348,7 @@ apis:
     A user marks an activity as favorite on the user's Activities Tab. The activity
     ids in the list can be used to create a new activity log entry via the Log Activity.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/favorite.json
   tags: User,-,Activities,Favorite.json
   properties:
@@ -365,7 +365,7 @@ apis:
     be used to log the activity via the Log Activity with the same or adjusted values
     for distance and duration.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/frequent.json
   tags: User,-,Activities,Frequent.json
   properties:
@@ -382,7 +382,7 @@ apis:
     to log the activity via the Log Activity with the same or adjusted values for
     distance and duration.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/recent.json
   tags: User,-,Activities,Recent.json
   properties:
@@ -397,7 +397,7 @@ apis:
     format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/sleep/minutesAsleep/date/{start-date-or-end-date}/{end-date-or-period}.json
   tags: User,User-id,Sleep,MinutesAsleep,Date,Start-date-or-end-date,End-date-or-period.json
   properties:
@@ -412,7 +412,7 @@ apis:
     format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/foods/log/caloriesIn/date/{start-date-or-end-date}/{end-date-or-period}.json
   tags: User,User-id,Foods,Log,CaloriesIn,Date,Start-date-or-end-date,End-date-or-period.json
   properties:
@@ -425,7 +425,7 @@ apis:
   description: Create or updates user's fat goal and get a response in the format
     requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat/goal.json
   tags: User,-,Body,Log,Fat,Goal.json
   properties:
@@ -437,7 +437,7 @@ apis:
   x-api-slug: fitbit
   description: Get a user's current fat goal in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat/goal.json
   tags: User,-,Body,Log,Fat,Goal.json
   properties:
@@ -451,7 +451,7 @@ apis:
     that corresponds to the Accept-Language header provided and get a response in
     the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/weight/goal.json
   tags: User,-,Body,Log,Weight,Goal.json
   properties:
@@ -464,7 +464,7 @@ apis:
   description: Get a user's current weight goal using units in the unit system that
     corresponds to the Accept-Language header provided in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/weight/goal.json
   tags: User,-,Body,Log,Weight,Goal.json
   properties:
@@ -476,7 +476,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's body fat log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat/{body-fat-log-id}.json
   tags: User,-,Body,Log,Fat,Body-fat-log-id.json
   properties:
@@ -488,7 +488,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's body weight log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat/{body-weight-log-id}.json
   tags: User,-,Body,Log,Fat,Body-weight-log-id.json
   properties:
@@ -500,7 +500,7 @@ apis:
   x-api-slug: fitbit
   description: Create log entry for a body fat and get a response in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat.json
   tags: User,-,Body,Log,Fat.json
   properties:
@@ -514,7 +514,7 @@ apis:
     corresponds to the Accept-Language header provided and get a response in the format
     requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/weight.json
   tags: User,-,Body,Log,Weight.json
   properties:
@@ -527,7 +527,7 @@ apis:
   description: Log body measurements using units in the unit system that corresponds
     to the Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body.json
   tags: User,-,Body.json
   properties:
@@ -542,7 +542,7 @@ apis:
     format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/body/weight/date/{start-date-or-end-date}/{end-date-or-period}.json
   tags: User,User-id,Body,Weight,Date,Start-date-or-end-date,End-date-or-period.json
   properties:
@@ -557,7 +557,7 @@ apis:
     format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/activities/calories/date/{start-date-or-end-date}/{end-date-or-period}.json
   tags: User,User-id,Activities,Calories,Date,Start-date-or-end-date,End-date-or-period.json
   properties:
@@ -569,7 +569,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's blood pressure log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/bp/{bp-log-id}.json
   tags: User,-,Bp,Bp-log-id.json
   properties:
@@ -581,7 +581,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's heart rate log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/heart/{heart-log-id}.json
   tags: User,-,Heart,Heart-log-id.json
   properties:
@@ -593,7 +593,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's sleep log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/sleep/{sleep-log-id}.json
   tags: User,-,Sleep,Sleep-log-id.json
   properties:
@@ -608,7 +608,7 @@ apis:
     related). We return weight and distance badges based on the user's unit profile
     preference as on the website.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/badges.json
   tags: User,User-id,Badges.json
   properties:
@@ -620,7 +620,7 @@ apis:
   x-api-slug: fitbit
   description: Delete user's activity log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities/{activity-log-id}.json
   tags: User,-,Activities,Activity-log-id.json
   properties:
@@ -632,7 +632,7 @@ apis:
   x-api-slug: fitbit
   description: Delete the user's food log entry with the given id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log/{food-log-id}.json
   tags: User,-,Foods,Log,Food-log-id.json
   properties:
@@ -646,7 +646,7 @@ apis:
     units in the unit system which corresponds to the Accept-Language header provided
     and get a response in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/glucose.json
   tags: User,-,Glucose.json
   properties:
@@ -659,7 +659,7 @@ apis:
   description: Create log entry for a blood pressure measurement and get a response
     in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/bp.json
   tags: User,-,Bp.json
   properties:
@@ -672,7 +672,7 @@ apis:
   description: Create log entry for a heart rate measurement and get a response in
     the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/heart.json
   tags: User,-,Heart.json
   properties:
@@ -684,7 +684,7 @@ apis:
   x-api-slug: fitbit
   description: Create log entry for a sleep and get a response in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/sleep.json
   tags: User,-,Sleep.json
   properties:
@@ -699,7 +699,7 @@ apis:
     food via previous calls to endpoints that retrieve food lists of the user. Each
     unit id maps to a unit in the list returned via the Get Food Units API call.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/foods/log.json
   tags: User,-,Foods,Log.json
   properties:
@@ -714,7 +714,7 @@ apis:
     contains both lifetime statistics from the tracker device and total numbers including
     the manual activity log entries as seen on the Fitbit website dashboard.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities.json
   tags: User,-,Activities.json
   properties:
@@ -727,7 +727,7 @@ apis:
   description: Create log entry for an activity using units in the unit system which
     corresponds to the Accept-Language header provided (or using optional custom distanceUnit).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/activities.json
   tags: User,-,Activities.json
   properties:
@@ -741,7 +741,7 @@ apis:
     using units in the unit system which corresponds to the Accept-Language header
     provided. Authorized user himself is also included in the response.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/friends/leaderboard.json
   tags: User,-,Friends,Leaderboard.json
   properties:
@@ -754,7 +754,7 @@ apis:
   description: Get user's friends in the format requested using units in the unit
     system which corresponds to the Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/friends.json
   tags: User,User-id,Friends.json
   properties:
@@ -771,7 +771,7 @@ apis:
     body (with zero glucose value for the days with no measurements) to allow to seamlessly
     fetch a list of all additional user created custom trackers.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/glucose/date/{date}.json
   tags: User,-,Glucose,Date,Date.json
   properties:
@@ -786,7 +786,7 @@ apis:
     only to authorized user. Blood pressure log entries in response are sorted exactly
     the same as they are presented on the Fitbit website.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/bp/date/{date}.json
   tags: User,-,Bp,Date,Date.json
   properties:
@@ -804,7 +804,7 @@ apis:
     with no measurements) to allow to seamlessly fetch a list of all additional user
     created custom trackers.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/heart/date/{date}.json
   tags: User,-,Heart,Date,Date.json
   properties:
@@ -819,7 +819,7 @@ apis:
     the given day (including naps). If you need data only for the main sleep you can
     fetch entry with "isMainSleep" = true or use Get-Time-Series calls.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/sleep/date/{date}.json
   tags: User,User-id,Sleep,Date,Date.json
   properties:
@@ -832,7 +832,7 @@ apis:
   description: Get a summary and list of a user's food log entries for a given day
     in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/foods/log/date/{date}.json
   tags: User,User-id,Foods,Log,Date,Date.json
   properties:
@@ -846,7 +846,7 @@ apis:
     for a given day in the format requested using units in the unit system which corresponds
     to the Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/activities/date/{date}.json
   tags: User,User-id,Activities,Date,Date.json
   properties:
@@ -859,7 +859,7 @@ apis:
   description: Get a list of all user's body fat log entries for a given day in the
     format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/fat/date/{date}.json
   tags: User,-,Body,Log,Fat,Date,Date.json
   properties:
@@ -873,7 +873,7 @@ apis:
     the format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/body/log/weight/date/{date}.json
   tags: User,-,Body,Log,Weight,Date,Date.json
   properties:
@@ -887,7 +887,7 @@ apis:
     format requested using units in the unit system which corresponds to the Accept-Language
     header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/body/date/{date}.json
   tags: User,User-id,Body,Date,Date.json
   properties:
@@ -900,7 +900,7 @@ apis:
   description: Update user's profile using units in the unit system that corresponds
     to the Accept-Language header provided and get a response in the format requested.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/-/profile.json
   tags: User,-,Profile.json
   properties:
@@ -913,7 +913,7 @@ apis:
   description: Get user's profile in the format requested using units in the unit
     system which corresponds to the Accept-Language header provided.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1//user/{user-id}/profile.json
   tags: User,User-id,Profile.json
   properties:
@@ -927,7 +927,7 @@ apis:
     stay motivated and improve your health by tracking your activity, exercise, food,
     weight and sleep.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg
-  humanURL: http://dev.fitbit.com
+  humanURL: http://fitbit.com
   baseURL: https://api.fitbit.com//1
   tags: Fitbit
   properties:
@@ -954,6 +954,8 @@ x-common:
   url: https://wiki.fitbit.com/display/API/Rate+Limit
 - type: x-twitter
   url: https://twitter.com/fitbit
+- type: x-website
+  url: http://fitbit.com
 - type: x-website
   url: http://dev.fitbit.com
 include: []
